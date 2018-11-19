@@ -302,11 +302,8 @@ namespace ui {
 //        s_previousFocusWnd = hwndEdit;
         this->editBoxEditingDidBegin();
 
-#ifdef HERE
         auto rect = ui::Helper::convertBoundingBoxToScreen(_editBox);
         this->updateNativeFrame(rect);
-#endif
-
     }
     void EditBoxImplWin::nativeCloseKeyboard()
     {

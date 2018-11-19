@@ -299,10 +299,8 @@ void EditBoxImplCommon::draw(Renderer* /*renderer*/, const Mat4& /*transform*/, 
 {
     if(flags)
     {
-#ifdef HERE
         auto rect = ui::Helper::convertBoundingBoxToScreen(_editBox);
         this->updateNativeFrame(rect);
-#endif
     }
 }
 
